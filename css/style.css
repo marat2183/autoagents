@@ -27,7 +27,9 @@
     align-items: center;
     justify-self: center;
 }
-
+.header__logo--1024px{
+    display: none;
+}
 .header__btn {
     width: 194px;
     height: 40px;
@@ -48,7 +50,7 @@
 
 .content__inner {
     width: calc(100% - 30px);
-    max-width: 625px;
+    max-width: 675px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -95,7 +97,7 @@
     font-weight: 500;
     color: #36dec5;
     font-size: 30px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     letter-spacing: -0.75px;
 }
 
@@ -120,37 +122,75 @@
 .presentation {
     width: 100%;
     height: 61.3vw;
-    max-height: 420px;
+    max-height: 450px;
     margin-top: 25px;
-    object-fit: contain;
+    /* object-fit: contain; */
     border-radius: 10px;
 }
 
-/* @media (min-width: 1024px){
-    .container{
-        max-width: 1024px;
-        padding: 0px 50px;
-    }
+@media (min-width: 1024px){
     .header__inner{
-        padding: 25px 0px;
+        width: calc(100% - 100px);
+    }
+    .header__logo--1024px{
+        display: block;
+    }
+    .header__logo{
+        display: none;
     }
     .content{
-        padding-top: 110px;
+        padding-top: 208px;
         padding-bottom: 208px;
     }
     .result{
-        width: 675px;
-        padding: 50px 177px;
+        border-radius: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 176px;
+        padding-right: 180px;
     }
     .result__title{
         text-align: center;
     }
-    .presentation__image{
-        width: 675px;
-        height: 450px;
+    .result__text{
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.5px;
+        margin-top: 8px;
     }
+    .result__text--title{
+        margin-top: 25px;
+        /* padding-right: 13px; */
+        font-size: 24px;
+        line-height: 1.27;
+        letter-spacing: -0.6px;
+    }
+    .result__text--mileage{
+        margin-top: 0;
+    }
+    .result__text--price{
+        font-size: 34px;
+        line-height: 1.76;
+        letter-spacing: -0.85px;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+    .result__text--info{
+        font-size: 14px;
+        margin-top: -9px;
+        letter-spacing: 0px;
+        /* white-space: nowrap; */
+    }
+    .result__btn{
+        margin-top: 23px;
+    }
+    .presentation{
+        border-radius: 20px;
+        margin-top: 50px;
+    }
+    
 }
-@media (min-width: 1280px){
+/* @media (min-width: 1280px){
     .container{
         max-width: 1280px;
         padding: 0px 50px;
@@ -169,4 +209,4 @@
         padding: 50px 75px;
         min-height: 450px;
     }
-} */
+} 
