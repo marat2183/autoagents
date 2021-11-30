@@ -36,6 +36,7 @@
     font-size: 15px;
     letter-spacing: 1.5px;
     color: #fff;
+    line-height: 1;
 }
 
 .content {
@@ -58,7 +59,10 @@
     width: 100%;
     border-radius: 10px;
     background-color: #fff;
-    padding: 50px 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 32px;
 }
 
 .result__title {
@@ -76,35 +80,41 @@
     letter-spacing: -0.6px;
     color: #1c1c1c;
     font-weight: normal;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .result__text--title {
-    margin-top: 25px;
-    font-weight: bold;
+    margin-top: 23px;
+    font-weight: 500;
 }
-
+.result__text--mileage{
+    margin-top: 0;
+}
 .result__text--price {
-    margin-top: 25px;
-    font-weight: bold;
+    margin-top: 23px;
+    font-weight: 500;
     color: #36dec5;
-    font-size: 29px;
+    font-size: 30px;
+    white-space: nowrap;
+    letter-spacing: -0.75px;
 }
 
 .result__text--info {
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0;
 }
-
 .result__btn {
     width: 100%;
     height: 40px;
-    margin-top: 25px;
+    margin-top: 24px;
     text-transform: uppercase;
     color: #fff;
     background: #5c57ff;
     font-size: 15px;
     letter-spacing: 1.5px;
+    line-height: 1.2;
 }
 
 .presentation {
