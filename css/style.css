@@ -27,7 +27,7 @@
     align-items: center;
     justify-self: center;
 }
-.header__logo--1024px{
+.header__logo--1024{
     display: none;
 }
 .header__btn {
@@ -44,8 +44,7 @@
 .content {
     min-height: 100vh;
     background-color: #5c57ff;
-    padding-top: 123px;
-    padding-bottom: 50px;
+    padding: 123px 0px 50px 0px;
 }
 
 .content__inner {
@@ -61,10 +60,7 @@
     width: 100%;
     border-radius: 10px;
     background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 35px;
-    padding-right: 32px;
+    padding: 50px 32px 50px 35px;
 }
 
 .result__title {
@@ -97,7 +93,6 @@
     font-weight: 500;
     color: #36dec5;
     font-size: 30px;
-    /* white-space: nowrap; */
     letter-spacing: -0.75px;
 }
 
@@ -124,7 +119,6 @@
     height: 61.3vw;
     max-height: 450px;
     margin-top: 25px;
-    /* object-fit: contain; */
     border-radius: 10px;
 }
 
@@ -136,22 +130,18 @@
         width: calc(100% - 349px);
         max-width: 775px;
     }
-    .header__logo--1024px{
-        display: block;
-    }
-    .header__logo{
+    .header__logo--mobile{
         display: none;
     }
+    .header__logo--1024{
+        display: block;
+    }
     .content{
-        padding-top: 208px;
-        padding-bottom: 208px;
+        padding: 208px 0;
     }
     .result{
         border-radius: 20px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 176px;
-        padding-right: 180px;
+        padding: 50px 180px 50px 176px;
     }
     .result__title{
         text-align: center;
@@ -164,7 +154,6 @@
     }
     .result__text--title{
         margin-top: 25px;
-        /* padding-right: 13px; */
         font-size: 24px;
         line-height: 1.25;
         letter-spacing: -0.6px;
@@ -176,14 +165,12 @@
         font-size: 34px;
         line-height: 1.76;
         letter-spacing: -0.85px;
-        /* white-space: nowrap; */
         margin-top: 1px;
     }
     .result__text--info{
         font-size: 14px;
         margin-top: -9px;
         letter-spacing: normal;
-        /* white-space: nowrap; */
     }
     .result__btn{
         margin-top: 23px;
@@ -200,8 +187,7 @@
         max-width: 1292px;
     }
     .content{
-        padding-top: 175px;
-        padding-bottom: 175px;
+        padding: 175px 0;
     }
     .content__inner{
         width: calc(100% - 100px);
@@ -217,7 +203,6 @@
     }
     .result{
         width: 39.83%;
-        /* max-width: 520px; */
         border-radius: 20px;
         padding: 50px 75px;
     }
@@ -228,8 +213,7 @@
         padding-left: 36px;
     }
     .content{
-        padding-top: 315px;
-        padding-bottom: 315px;
+        padding: 315px 0;
     }
     .content__inner{
         width: calc(100% - 628px);
