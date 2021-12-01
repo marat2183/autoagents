@@ -162,7 +162,7 @@
         margin-top: 25px;
         /* padding-right: 13px; */
         font-size: 24px;
-        line-height: 1.27;
+        line-height: 1.25;
         letter-spacing: -0.6px;
     }
     .result__text--mileage{
@@ -173,12 +173,12 @@
         line-height: 1.76;
         letter-spacing: -0.85px;
         white-space: nowrap;
-        margin-top: 0;
+        margin-top: 1px;
     }
     .result__text--info{
         font-size: 14px;
         margin-top: -9px;
-        letter-spacing: 0px;
+        letter-spacing: normal;
         /* white-space: nowrap; */
     }
     .result__btn{
