@@ -58,6 +58,7 @@
 
 .result {
     width: 100%;
+    min-height: 432px;
     border-radius: 10px;
     background-color: #fff;
     padding: 50px 32px 50px 35px;
@@ -122,6 +123,72 @@
     border-radius: 10px;
 }
 
+.popup{
+    position: fixed;
+    padding: 162px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 1;
+    background-color: rgba(0,0,0, .5);
+}
+
+.popup__inner{
+    width: calc(100% - 30px);
+    max-width: 480px;
+    height: 488px;
+    margin: auto;
+    padding: 25px 25px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.popup__close{
+   display: block;
+   margin-left: auto;
+}
+.popup__selector{
+    margin: 37px 0 0 61px;
+}
+.popup__text{
+    margin: 58px 0 0 32px;
+    font-size: 24px;
+    line-height: 2.71;
+    letter-spacing: -0.6px;
+    color: #1c1c1c;
+}
+.popup__text--title{
+    margin: 22px 0px 0px 33px;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -0.75px;
+    text-align: left;
+    color: #1c1c1c;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+.popup__buttons{
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.popup__button{
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    background: #5c57ff;
+    font-size: 15px;
+    line-height: 1.33;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.popup__button--right{
+    margin-left: 15px;
+}
+
 @media (min-width: 1024px){
     .header__inner{
         width: calc(100% - 100px);
@@ -140,6 +207,7 @@
         padding: 208px 0;
     }
     .result{
+        min-height: 450px;
         border-radius: 20px;
         padding: 50px 180px 50px 176px;
     }
@@ -180,6 +248,26 @@
         margin-top: 50px;
         max-width: 775px;
     }
+    .popup{
+        padding: 427px 0 426px 0;
+    }
+    .popup__inner{
+        height: 513px;
+        padding: 25px 25px 50px 75px;
+    }
+    .popup__text--title{
+        margin-left: 50px;
+        padding-right: 70px;
+    }
+    .popup__selector{
+        margin-left: 78px;
+    }
+    .popup__buttons{
+        justify-content: unset;
+    }
+    .popup__button--right{
+        margin-left: 50px;
+    }
     
 }
 @media (min-width: 1280px){
@@ -206,6 +294,10 @@
         border-radius: 20px;
         padding: 50px 75px;
     }
+    .popup{
+        padding: 144px 0 143px 0;
+    }
+
 }
 @media (min-width: 1920px){
     .header__inner{
@@ -222,5 +314,8 @@
     .result{
         padding: 50px 100px;
         width: 520px;
+    }
+    .popup{
+        padding: 284px 0 283px 0;
     }
 } 

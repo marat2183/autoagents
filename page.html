@@ -53,5 +53,45 @@
             >
         </div>
     </section>
+    <section class="popup">
+        <div class="popup__inner">
+            <img 
+                src="./img/close_icon.svg" 
+                alt="" 
+                class="popup__close"
+            >
+            <h1 class="popup__text popup__text--title">how do you prefer to be contacted?</h1>
+            <div class="popup__selector">
+                <input 
+                    type="radio" 
+                    class="popup__input"
+                    id="contact-phone" 
+                    name="contact" 
+                    value="phone"
+                >
+                <label class="popup__text" for="contact-phone">phone</label><br>
+                <input 
+                    type="radio" 
+                    class="popup__input"
+                    id="contact-email" 
+                    name="contact" 
+                    value="email"
+                >
+                <label class="popup__text" for="contact-email">email</label><br>
+                <input  
+                    type="radio" 
+                    class="popup__input"
+                    id="contact-text"
+                    name="contact" 
+                    value="text"
+                >
+                <label  class="popup__text" for="contact-text">text</label>
+            </div>
+            <div class="popup__buttons">
+                <button class="button popup__button popup__button--left">now</button>
+                <button class="button popup__button popup__button--right">later</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
