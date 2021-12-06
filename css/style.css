@@ -33,23 +33,26 @@
 .header__btn {
     width: 194px;
     height: 40px;
-    background-color: rgb(92,87,255);
+    background-color: #5c57ff;
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1.5px;
     color: #fff;
     line-height: 1;
+    transition: 0.5s;
 }
  
-.header__btn--active:hover{
+.header__btn:hover{
     box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
-    background-color: #5c57ff;
-    transition: 0.5s;
 } 
-.header__btn--active:focus{
+.header__btn:focus{
     color: #5c57ff;
     background-color: #3f3cca;
-    transition: 0.5s;
+}
+
+.header__btn:disabled{
+    background-color: #d2defc;
+    color: #fff;
 }
 
 .content {
@@ -120,20 +123,22 @@
     margin-top: 24px;
     text-transform: uppercase;
     color: #fff;
-    background: #5c57ff;
+    background-color: #5c57ff;
     font-size: 15px;
     letter-spacing: 1.5px;
     line-height: 1.2;
-}
-.result__btn--active:hover{
-    box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
-    background-color: #5c57ff;
     transition: 0.5s;
 }
-.result__btn--active:focus{
+.result__btn:hover{
+    box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
+}
+.result__btn:focus{
     color: #5c57ff;
     background-color: #3f3cca;
-    transition: 0.5s;
+}
+.result__btn:disabled{
+    color:#fff;
+    background-color: #d2defc;
 }
 .presentation {
     width: 100%;
@@ -203,9 +208,10 @@
     max-height: 45px;
     display: flex;
     align-items: center;
-}
-.popup__item + .popup__item{
     margin-top: 19px;
+}
+.popup__item:first-of-type{
+    margin-top: 0;
 }
 .popup__circle{
     width: 45px;
@@ -233,22 +239,26 @@
     line-height: 1.33;
     letter-spacing: 1.5px;
     color: #fff;
+    transition: 0.5s;
 }
 .popup__button--right{
     margin-left: 15px;
 }
 
-.popup__button--active:hover{
+.popup__button:hover{
     box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
-    background-color: #5c57ff;
-    transition: 0.5s;
 }
 
-.popup__button--active:focus{
+.popup__button:focus{
     color: #5c57ff;
     background-color: #3f3cca;
-    transition: 0.5s;
 }
+
+.popup__button:disabled{
+    color:#fff;
+    background-color: #d2defc;
+}
+
 @media (min-width: 1024px){
     .header__inner{
         width: calc(100% - 100px);

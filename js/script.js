@@ -1,6 +1,6 @@
 const body = document.querySelector('body')
 const popup = document.querySelector('.popup')
-const popupOpenBtn = document.querySelector('.result__btn--active')
+const popupOpenBtn = document.querySelector('.result__btn')
 const popupCloseBtn = document.querySelector('.popup__close')
 const popupSelector = document.querySelector('.popup__selector')
 const popupSelectorBullets = document.querySelectorAll('.popup__circle')
