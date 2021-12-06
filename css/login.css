@@ -16,7 +16,7 @@
 }
 .form__wrapper{
     padding: 100px 0 283px 0;
-    width: 319px;
+    width: 353px;
     margin: 0 auto;
 }
 .form__title{
@@ -25,23 +25,41 @@
     margin-top: 50px;
     font-weight: normal;
 }
+
+.form__notify{
+    display: block;
+    font-size: 18px;
+    padding: 2px 0 0 1px;
+    margin-top: 25px;
+    line-height: 1.33;
+    text-align: left;
+    white-space: nowrap;
+    color: #fd0100;
+}
 .form__input{
-    padding: 22px 14px 20px 21px;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    width: 319px;
+    padding: 22px 14px 20px 20px;
     height: 50px;
     border: solid 1px #d2defc;
     font-size: 18px;
     line-height: 1.33;
 }
+
+.form__input--invalid{
+    border: solid 1px #fd0100;
+}
+
 .form__input--login{
-    margin-top: 25px;
+    margin-top: 23px;
 }
 .form__input-wrapper{
     position: relative;
 }
 .form__input--password{
     margin-top: 10px;
-    padding-left: 24px;
     letter-spacing: 5px;
 }
 .form__eye-icon{
@@ -50,21 +68,23 @@
     transition: 0.5s all;
 }
 .form__eye-icon--open{
-    top: 28px;
-    right: 14px;
+    top: 18px;
+    right: 32px;
     display: block;
 }
 .form__eye-icon--close{
-    top: 25px;
-    right: 14px;
+    top: 15px;
+    right: 32px;
     display: none;
 }
 .form__button{
+    display: block;
+    width: 319px;
+    margin: 0 auto;
     margin-top: 25px;
     outline: none;
     border: none;
     height: 60px;
-    width: 100%;
     color: #fff;
     background-color: #5c57ff;
     font-size: 20px;
