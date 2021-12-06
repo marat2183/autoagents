@@ -92,6 +92,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.5s all;
 }
 .form__button:hover{
     box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
