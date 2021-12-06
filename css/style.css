@@ -142,9 +142,6 @@
     margin-top: 25px;
     border-radius: 10px;
 }
-body{
-    overflow-y: hidden;
-}
 .popup{
     position: fixed;
     padding: 162px 0;
@@ -152,10 +149,17 @@ body{
     left: 0;
     width: 100%;
     min-height: 100vh;
-    opacity: 1;
+    opacity: 0;
     background-color: rgba(0,0,0, .5);
     overflow-y: auto;
     max-height: 100%;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.popup--active{
+    transition: 0.5s all;
+    opacity: 1;
+    pointer-events: all;
 }
 .popup__inner{
     width: calc(100% - 30px);
@@ -169,6 +173,7 @@ body{
 .popup__close{
    display: block;
    margin-left: auto;
+   cursor: pointer;
 }
 .popup__selector{
     display: flex;
@@ -207,6 +212,7 @@ body{
     height: 45px;
     border-radius: 50%;
     border: solid 2px #5c57ff;
+    cursor: pointer;
 }
 .popup__circle--active{
     box-shadow: 0 0 10px 0 #89bff4;
