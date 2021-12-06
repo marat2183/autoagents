@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20.576" viewBox="0 0 24 20.576">
+    <defs>
+        <style>
+            .cls-1{fill:#1c1c1c}
+        </style>
+    </defs>
+    <g id="Icon_ionic-ios-eye-off" data-name="Icon ionic-ios-eye-off" transform="translate(-2.252 -4.499)">
+        <path id="Path_717" data-name="Path 717" class="cls-1" d="M5.8 4.719A.762.762 0 0 0 4.726 5.8l19.048 19.055a.755.755 0 0 0 .734.193.742.742 0 0 0 .343-.2.76.76 0 0 0 0-1.072z" transform="translate(-.536)"/>
+        <g id="Group_1145" data-name="Group 1145" transform="translate(2.252 7.072)">
+            <path id="Path_718" data-name="Path 718" class="cls-1" d="M14.477 21.277A4.817 4.817 0 0 1 9.9 14.4l-2.865-2.869a37.584 37.584 0 0 0-4.56 4.356.847.847 0 0 0-.005 1.141c3.477 3.842 6.542 7.148 11.771 7.148a10.317 10.317 0 0 0 4.41-1.029l-2.331-2.33a4.869 4.869 0 0 1-1.843.46z" transform="translate(-2.252 -8.745)"/>
+            <path id="Path_719" data-name="Path 719" class="cls-1" d="M28.4 16.126a.84.84 0 0 0 .027-1.109c-2.8-3.4-6.687-7.142-11.814-7.142a10.03 10.03 0 0 0-4.393 1.018l2.341 2.341a4.721 4.721 0 0 1 1.838-.461 4.817 4.817 0 0 1 4.581 6.88l2.867 2.867a35.442 35.442 0 0 0 4.553-4.394z" transform="translate(-4.624 -7.875)"/>
+            <path id="Path_720" data-name="Path 720" class="cls-1" d="M13.511 17.951a3.443 3.443 0 0 0 3.156 3.156 3.349 3.349 0 0 0 1.254-.139l-4.276-4.276a3.5 3.5 0 0 0-.134 1.259z" transform="translate(-4.929 -9.973)"/>
+            <path id="Path_721" data-name="Path 721" class="cls-1" d="M22.142 17.935c0-.07-.005-.139-.005-.209a2.376 2.376 0 0 1-.975.209c-.059 0-.113 0-.166-.005l1 1a3.426 3.426 0 0 0 .146-.995z" transform="translate(-6.712 -10.219)"/>
+            <path id="Path_722" data-name="Path 722" class="cls-1" d="M17.69 14.411a2.517 2.517 0 0 1 .166-.905c-.054 0-.107-.005-.166-.005a3.39 3.39 0 0 0-.991.15l1 1c.001-.079-.009-.16-.009-.24z" transform="translate(-5.69 -9.214)"/>
+        </g>
+    </g>
+</svg>
