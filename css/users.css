@@ -18,8 +18,7 @@
     margin-top: 12px;
     display: flex;
     align-items: center;
-    padding-left: 2px;
-    padding-top: 1px;
+    padding: 1px 0 0 2px;
 }
 .header__button{
     margin-left: 280px;
@@ -28,11 +27,12 @@
     height: 46px;
     background-color: #5c57ff;;
     position: relative;
+    cursor: pointer;
 }
 .header__add-stick::before {
     position: absolute;
     content: '';
-    top: 21px;
+    top: 22px;
     left: 10px;
     height: 2px;
     width: 26px;
@@ -52,8 +52,7 @@
     margin-left: 217px;
     display: flex;
     align-items: center;
-    margin-left: 218px;
-    margin-top: -4px;
+    margin: -4px 0 0 218px;
 }
 .header__text{
     font-size: 14px;
@@ -62,16 +61,15 @@
     white-space: nowrap;
 }
 .header__exit-btn{
-    padding-bottom: 4px;
-    padding-left: 11px;
+    padding: 0 0 4px 11px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .content{
     min-height: 100vh;
     background-color: #f7f7f7;
-    padding-top: 86px;
-    padding-bottom: 49px;
+    padding: 86px 0 49px 0;
 }
 
 .content__inner{
@@ -146,108 +144,97 @@
     display: flex;
     align-items: center;
 }
+.table-item__edit-btn{
+    cursor: pointer;
+}
 .table-item__delete-btn{
+    cursor: pointer;
     margin-left: 20px;
 }
 .pagination{
     width: 730px;
-    padding-top: 14px;
+    padding-top: 15px;
 }
 .pagination__inner{
-    width: 646px;
-    margin: 0 auto;
+    width: 647px;
+    margin: 0 42px 0 41px;
     display: flex;
     align-items: center;
 }
 .pagination__icon{
-    margin-top: 1px;
     width: 12px;
     height: 12px;
 }
-.pagination__button-wrapper{
-    position: relative;
-}
-.pagination__button-wrapper--prev{
-    margin-left: 17px;
-    width: 146px;
-    height: 40px;
-}
-.pagination__button-wrapper--next{
-    margin-left: 10px;
-    width: 121px;
-    height: 40px;
-}
+
 .pagination__button{
     outline: none;
     border: none;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
     background-color: #ffce00;
     font-size: 14px;
     line-height: 1.71;
-}
-.pagination__button--prev{
-    padding-top: 1px;
-    padding-left: 18px;
-}
-.pagination__button--next{
-    padding-left: 10px;
-}
-.pagination__btn-back-icon{
-    position: absolute;
-    top: 14px;
-    right: 118px;
-}
-.pagination__selector-wrapper{
-    margin-left: 10px;
-    width: 110px;
-    height: 40px;
     position: relative;
 }
-
+.pagination__button:disabled{
+    background-color: #fbe27b;
+}
+.pagination__button--prev{
+    width: 146px;
+    height: 40px;
+    margin-left: 21px;
+    padding-left: 16px;
+}
+.pagination__button--prev::before{
+    content: url('../img/btn-back-icon.svg');
+    position: absolute;
+    top: 10px;
+    left: 19px;
+}
+.pagination__button--next{
+    margin-left: 10px;
+    width: 121px;
+    height: 40px;
+    padding: 0 25px 0 10px;
+}
+.pagination__button--next::after{
+    content: url(../img/btn-next-icon.svg);
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
 .pagination__selector-btn{
+    margin: -1px 0 0 10px;
     outline: none;
     border: none;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
-    padding-right: 18px;
+    width: 110px;
+    height: 40px;
+    position: relative;
+    padding-right: 21px;
     font-size: 14px;
-    line-height: 1.5;
 }
-.pagination__selector-icon{
+.pagination__selector-btn::after{
+    content: url(../img/selector-icon.svg);
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 12px;
+    right: 19px;
 }
-.pagination__btn-next-icon{
-    position: absolute;
-    top: 14px;
-    right: 17px;
-}
-
-.pagination__button--next{
-    padding-top: 2px;
-    padding-right: 22px;
-}
-.pagination__icon-next{
+.pagination__icon--next{
     margin-left: 21px;
-    width: 12px;
-    height: 12px;
+    color: #000;
 }
 
 .pagination__page-info{
-    margin-left: 50px;
+    margin-left: 49px;
     display: block;
     font-size: 14px;
+    width: 90px;
     line-height: 1.5;
     white-space: nowrap;
 }
 .pagination__current-page{
     display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 6px;
     padding: 11px 10px;
     background-color: #fff;
 }
