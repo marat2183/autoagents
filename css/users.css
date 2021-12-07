@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 86px;
+    background-color: #f7f7f7;
+}
+
+.header__inner{
+    width: 730px;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    padding-top: 1px;
+}
+.header__button{
+    margin-left: 280px;
+    border-radius: 100px;
+    width: 46px;
+    height: 46px;
+    background-color: #5c57ff;;
+    position: relative;
+}
+.header__add-stick::before {
+    position: absolute;
+    content: '';
+    top: 21px;
+    left: 10px;
+    height: 2px;
+    width: 26px;
+    background-color: #fff
+}
+.header__add-stick::after{
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    content: '';
+    height: 2px;
+    transform: rotate(90deg);
+    width: 26px;
+    background-color: #fff;
+}
+.header__user-info{
+    margin-left: 217px;
+    display: flex;
+    align-items: center;
+    margin-left: 218px;
+    margin-top: -4px;
+}
+.header__text{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    white-space: nowrap;
+}
+.header__exit-btn{
+    padding-bottom: 4px;
+    padding-left: 11px;
+    margin-left: 15px;
+}
+
+.content{
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding-top: 86px;
+    padding-bottom: 49px;
+}
+
+.content__inner{
+    width: 730px;
+    margin: 0 auto;
+}
+
+.table{
+    width: 100%;
+
+}
+
+.table__header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+.table__title{
+    padding: 19px 0 21px 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    text-align: left;
+}
+.table__title--user{
+    padding-left: 16px;
+    width: 316px;
+}
+.table__title--email{
+    width: 347px;
+}
+.table__title--action{
+    width: 67px;
+}
+.table-item{
+    margin-top: 1px;
+    width: 100%;
+    padding: 5px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.table-item__text{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+.table-item__user-info{
+    padding: 0 16px;
+    width: 316px;
+    display: flex;
+    align-items: center;
+
+}
+.table-item__user-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.table-item__text--fullname{
+    margin-left: 25px;
+}
+.table-item__text--email{
+    width: 347px;
+    padding-right: 16px;
+}
+.table-item__buttons{
+    width: 67px;
+    display: flex;
+    align-items: center;
+}
+.table-item__delete-btn{
+    margin-left: 20px;
+}
+.pagination{
+    width: 730px;
+    padding-top: 14px;
+}
+.pagination__inner{
+    width: 646px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.pagination__icon{
+    margin-top: 1px;
+    width: 12px;
+    height: 12px;
+}
+.pagination__button-wrapper{
+    position: relative;
+}
+.pagination__button-wrapper--prev{
+    margin-left: 17px;
+    width: 146px;
+    height: 40px;
+}
+.pagination__button-wrapper--next{
+    margin-left: 10px;
+    width: 121px;
+    height: 40px;
+}
+.pagination__button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #ffce00;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.pagination__button--prev{
+    padding-top: 1px;
+    padding-left: 18px;
+}
+.pagination__button--next{
+    padding-left: 10px;
+}
+.pagination__btn-back-icon{
+    position: absolute;
+    top: 14px;
+    right: 118px;
+}
+.pagination__selector-wrapper{
+    margin-left: 10px;
+    width: 110px;
+    height: 40px;
+    position: relative;
+}
+
+.pagination__selector-btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding-right: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.pagination__selector-icon{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+.pagination__btn-next-icon{
+    position: absolute;
+    top: 14px;
+    right: 17px;
+}
+
+.pagination__button--next{
+    padding-top: 2px;
+    padding-right: 22px;
+}
+.pagination__icon-next{
+    margin-left: 21px;
+    width: 12px;
+    height: 12px;
+}
+
+.pagination__page-info{
+    margin-left: 50px;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.pagination__current-page{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 11px 10px;
+    background-color: #fff;
+}
