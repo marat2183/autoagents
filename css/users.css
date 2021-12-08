@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
 }
 
 .header{
@@ -12,7 +13,7 @@
     background-color: #f7f7f7;
 }
 
-.header__inner{
+.header__wrapper{
     width: 730px;
     margin: 0 auto;
     margin-top: 12px;
@@ -48,20 +49,18 @@
     width: 26px;
     background-color: #fff;
 }
-.header__user-info{
-    margin-left: 217px;
-    display: flex;
-    align-items: center;
-    margin: -4px 0 0 218px;
-}
+
 .header__text{
-    font-size: 14px;
+    display: block;
+    margin-top: -5px;
+    max-width: 200px;
+    text-align: right;
+    margin-left: auto;
     font-weight: bold;
     line-height: 1.71;
-    white-space: nowrap;
 }
 .header__exit-btn{
-    padding: 0 0 4px 11px;
+    padding: 0 0 8px 11px;
     margin-left: 15px;
     cursor: pointer;
 }
@@ -72,7 +71,7 @@
     padding: 86px 0 49px 0;
 }
 
-.content__inner{
+.content__wrapper{
     width: 730px;
     margin: 0 auto;
 }
@@ -91,7 +90,6 @@
 .table__title{
     padding: 19px 0 21px 0;
     text-transform: capitalize;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.71;
     text-align: left;
@@ -116,7 +114,6 @@
     background-color: #fff;
 }
 .table-item__text{
-    font-size: 14px;
     line-height: 1.5;
     text-align: left;
 }
@@ -155,13 +152,14 @@
     width: 730px;
     padding-top: 15px;
 }
-.pagination__inner{
+.pagination__wrapper{
     width: 647px;
     margin: 0 42px 0 41px;
     display: flex;
     align-items: center;
 }
 .pagination__icon{
+    cursor: pointer;
     width: 12px;
     height: 12px;
 }
@@ -171,7 +169,6 @@
     border: none;
     cursor: pointer;
     background-color: #ffce00;
-    font-size: 14px;
     line-height: 1.71;
     position: relative;
 }
@@ -211,7 +208,6 @@
     height: 40px;
     position: relative;
     padding-right: 21px;
-    font-size: 14px;
 }
 .pagination__selector-btn::after{
     content: url(../img/selector-icon.svg);
@@ -227,7 +223,6 @@
 .pagination__page-info{
     margin-left: 49px;
     display: block;
-    font-size: 14px;
     width: 90px;
     line-height: 1.5;
     white-space: nowrap;
