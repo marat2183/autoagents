@@ -233,3 +233,120 @@
     padding: 11px 10px;
     background-color: #fff;
 }
+.popup{
+    position: fixed;
+    padding: 180px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+    background-color: rgba(0,0,0, .5);
+    overflow-y: auto;
+    max-height: 100%;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.popup--active{
+    opacity: 1;
+    pointer-events: all;
+}
+.popup__inner{
+    width: calc(100% - 30px);
+    max-width: 405px;
+    height: 438px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.popup__header{
+    height: 68px;
+    width: 100%;
+    padding: 24px 0 25px 51px;
+    background-color: #ffce00;
+    line-height: 1.71;
+    font-weight: bold;
+}
+.popup__header-span{
+    font-weight: normal;
+    margin-left: 1px;
+    padding-bottom: 3px;
+}
+.popup__form{
+    padding: 0 51px;
+    position: relative;
+}
+.popup__input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 38px;
+    border-bottom: 1px solid #f7f7f7;
+    line-height: 1.71;
+    margin-top: 16px;
+}
+.popup__input::placeholder{
+    color: #8d8d8d;
+}
+.popup__input--first-name{
+    width: 230px;
+}
+.popup__user-icon{
+    position: absolute;
+    top: 26px;
+    right: 50px;
+}
+.popup__link{
+    width: 176px;
+    height: 18px;
+    display: block;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 16px auto 0 auto;
+    padding-left: 1px;
+    white-space: nowrap;
+}
+.popup__buttons{
+    margin-top: 25px;
+    padding: 0 45px 50px 50px;
+}
+.popup__button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    height: 46px;
+    line-height: 1.93;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+.popup__button--cancel{
+    background-color: #fff;
+    border: 1px solid #5c57ff;
+    color: #5c57ff;
+}
+.popup__button--cancel:hover{
+    box-shadow: 0 0 10px 0 rgba(31, 64, 164, 0.5);
+    border: 1px solid  #3f3cca;
+    color: #3f3cca;
+}
+.popup__button--cancel:focus{
+    border: 1px solid #3f3cca;
+    color: #3f3cca;
+}
+.popup__button--add{
+    margin-left: 22px;
+    color: #fff;
+    background-color: #5c57ff;
+}
+.popup__button--add:hover{
+    box-shadow: 0 0 10px 0 rgba(18, 12, 213, 0.5);
+}
+.popup__button--add:disabled{
+    background-color: #d2defc;
+}
+.popup__button--add:focus{
+    color: #5c57ff;
+    background-color: #3f3cca;
+}

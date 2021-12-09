@@ -299,5 +299,27 @@
             </div>
         </div>
     </section>
+    <section class="popup">
+        <div class="popup__inner">
+            <h1 class="popup__header">Add a new User <span class="popup__header-span">(fill in all fields)</span></h1>
+            <div class="popup__form">
+                <input type="text" class="popup__input popup__input--first-name" placeholder="First name">
+                <input type="text" class="popup__input popup__input--last-name" placeholder="Last name">
+                <input type="text" class="popup__input popup__input--email" placeholder="Email">
+                <input type="password" class="popup__input popup__input--password" placeholder="Password">
+                <img 
+                    src="img/user-icon.svg" 
+                    alt="" 
+                    class="popup__user-icon"
+                >
+            </div>
+            <a href="#" class="popup__link">generate the password</a>
+            <div class="popup__buttons">
+                <button class="popup__button popup__button--cancel">cancel</button>
+                <button class="popup__button popup__button--add">add user</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/users.js"></script>
 </body>
 </html>
