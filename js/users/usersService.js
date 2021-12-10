@@ -4,7 +4,7 @@ import { usersData } from "./usersData.js";
 
 const MAX_TABLE_SIZE = 9;
 
-function userAddService(usersData){
+const userAddService = (usersData) => {
     if (usersData.length <= MAX_TABLE_SIZE){
         for (let user of usersData){
             createUsersTableItem(user)

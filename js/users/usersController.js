@@ -3,7 +3,7 @@ const usersTable = document.querySelector('.table');
 
 
 
-function createUsersTableItem(userObj){
+const createUsersTableItem = (userObj) => {
     const tableItem = document.createElement('div');
     tableItem.classList.add('table-item');
     const userInfoDiv = createUserInfoBlock(userObj.fullname, userObj.avatarImgPaths);
@@ -14,7 +14,7 @@ function createUsersTableItem(userObj){
     return;
 }
 
-function createUserInfoBlock(fullname, avatarPaths){
+const createUserInfoBlock = (fullname, avatarPaths) => {
     const userInfoDiv = document.createElement('div');
     userInfoDiv.classList.add('table-item__user-info');
 
@@ -31,14 +31,14 @@ function createUserInfoBlock(fullname, avatarPaths){
     return userInfoDiv
 }
 
-function createUserEmailSpan(email){
+const createUserEmailSpan = (email) => {
     const userEmailSpan = document.createElement('span');
     userEmailSpan.classList.add('table-item__text','table-item__text--email')
     userEmailSpan.textContent = email;
     return userEmailSpan
 }
 
-function createTableItemButtons(){
+const createTableItemButtons = () => {
     const tableButtonsDiv = document.createElement('div');
 
     const editButtonImg = document.createElement('img');
