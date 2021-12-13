@@ -1,6 +1,5 @@
 const body = document.querySelector('body')
 const popup = document.querySelector('.popup')
-const popupActive = document.querySelector('popup--active')
 const addUserPopupOpenBtn = document.querySelector('.header__button')
 const popupCloseBtn = document.querySelector('.popup__button--cancel')
 const popupAddUserBtn = document.querySelector('.popup__button--add')
