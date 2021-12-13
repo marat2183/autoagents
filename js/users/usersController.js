@@ -21,7 +21,7 @@ const createUserInfoBlock = (fullname, avatarPaths) => {
     const userAvatarImg = document.createElement('img');
     userAvatarImg.classList.add('table-item__user-avatar');
     userAvatarImg.setAttribute('src', avatarPaths[0]);
-    userAvatarImg.setAttribute('srcset', avatarPaths.slice(1).join(', '));
+    userAvatarImg.setAttribute('srcset', `${avatarPaths[1]} 2x, ${avatarPaths[2]} 3x`);
 
     const userFullnameSpan = document.createElement('span');
     userFullnameSpan.classList.add('table-item__text', 'table-item__text--fullname')

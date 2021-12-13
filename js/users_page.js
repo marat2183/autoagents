@@ -1,5 +1,6 @@
 const body = document.querySelector('body')
 const popup = document.querySelector('.popup')
+const popupActive = document.querySelector('popup--active')
 const addUserPopupOpenBtn = document.querySelector('.header__button')
 const popupCloseBtn = document.querySelector('.popup__button--cancel')
 const popupAddUserBtn = document.querySelector('.popup__button--add')
@@ -12,7 +13,7 @@ const inputs = {
 }
 
 
-function needToChangeAddBtnState(){
+const needToChangeAddBtnState = () => {
     let isBlank = false;
     for (key in inputs){
         if (!inputs[key].value){
@@ -27,21 +28,27 @@ function needToChangeAddBtnState(){
     }
 }
 
-
-addUserPopupOpenBtn.addEventListener('click', function(event){
+const openPopup = () =>{
     body.style.overflowY = 'hidden';
     popup.classList.add('popup--active');
     popupAddUserBtn.disabled = true;
-});
+}
 
-popupCloseBtn.addEventListener('click', function(event){
+const closePopup = () => {
     popup.classList.remove('popup--active');
     body.removeAttribute('style');
+}
+
+addUserPopupOpenBtn.addEventListener('click', () =>{
+    openPopup();
 });
 
-popupFormInputs.forEach(function(form_input){
-    form_input.addEventListener('keyup', function(event){
-        console.log(event.type)
+popupCloseBtn.addEventListener('click', () =>{
+    closePopup();
+});
+
+popupFormInputs.forEach((form_input) =>{
+    form_input.addEventListener('keyup', () =>{
         if (needToChangeAddBtnState()){
             popupAddUserBtn.disabled = false;
         }
@@ -51,3 +58,11 @@ popupFormInputs.forEach(function(form_input){
     });
 });
 
+popup.addEventListener('click', (event) =>{
+    if (popup.classList.contains('popup--active')){
+        const clickTarget = event.target;
+        if (clickTarget === popup){
+            closePopup();
+        }
+    }
+})
